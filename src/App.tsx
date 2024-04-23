@@ -1,6 +1,7 @@
 import { ThemeProvider } from "styled-components";
-import { defultTheme } from "./themes/defult";
+import { defultTheme } from "./styles/themes/defult";
 import { Button } from "./components/Button";
+import { GlobalStyle } from "./styles/themes/global";
 
 export function App() {
   return (
@@ -9,6 +10,8 @@ export function App() {
       <Button variant="secondary" />
       <Button variant="danger" />
       <Button variant="success" />
+
+      <GlobalStyle />
     </ThemeProvider>
   );
 }
